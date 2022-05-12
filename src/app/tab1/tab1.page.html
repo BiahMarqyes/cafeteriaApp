@@ -1,17 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Cafés
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-searchbar showCancelButton="always"></ion-searchbar>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://assets3.thrillist.com/v1/image/1681853/1200x600/scale;">
+    </ion-thumbnail>
+    <ion-label>Café Expresso</ion-label>
+    <ion-badge color="dark">5.50</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://i.pinimg.com/originals/92/bf/a8/92bfa82a4afa245ea4701c801f3451d8.jpg">
+    </ion-thumbnail>
+    <ion-label>Café com Chocolate</ion-label>
+    <ion-badge color="dark">9.90</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://exigibuencafe.com/wp-content/uploads/2017/12/exigi-5-1000x600.jpg">
+    </ion-thumbnail>
+    <ion-label>Capuchino</ion-label>
+    <ion-badge color="dark">8.00</ion-badge>
+  </ion-item>
 </ion-content>
